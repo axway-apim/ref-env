@@ -10,6 +10,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- script: pwd
+- script: ls -al
 - task: MavenAuthenticate@0
   inputs:
     artifactsFeeds: axwayapim
@@ -23,5 +25,4 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- script: pwd
-- script: ls -al
+
