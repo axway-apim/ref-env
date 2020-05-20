@@ -28,7 +28,7 @@
       </plugin>
     </plugins>
   </build>
-   <repositories>
+   <pluginRepositories>
         <repository>
             <id>axwayapim</id>
             <url>https://pkgs.dev.azure.com/axwayapim/_packaging/axwayapim/maven/v1</url>
@@ -39,5 +39,5 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-    </repositories>
+    </pluginRepositories>
  </project>
