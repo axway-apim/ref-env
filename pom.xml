@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <name>ref-env-polices</name>
 
-    <properties><revision>1.0.2</revision></properties>
+
 
     <build>
         <plugins>
@@ -34,7 +34,7 @@
             <plugin>
                 <groupId>com.axway.apim</groupId>
                 <artifactId>gateway-plugin</artifactId>
-                <version>${revision}</version>
+                <version>1.0.3</version>
                 <configuration>
                     <host>34.194.171.27</host>
                     <port>8090</port>
