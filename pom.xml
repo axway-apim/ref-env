@@ -36,7 +36,7 @@
                 <artifactId>gateway-plugin</artifactId>
                 <version>1.0.3</version>
                 <configuration>
-                    <host>34.194.171.27</host>
+                    <host>10.194.171.27</host>
                     <port>8090</port>
                     <protocol>https</protocol>
                     <groupName>DR</groupName>
