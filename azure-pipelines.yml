@@ -13,6 +13,7 @@ steps:
 - script: pwd
 - script: ls -al
 - script: docker run  -v /home/vsts/work/1/s:/home/axway/apiprojects  dssaxway.azurecr.io/apim/anm /bin/bash /opt/Axway/apigateway/posix/bin/projpack --create  --passphrase-none --dir /home/axway/apiprojects --name=myarchive --add /home/axway/apiprojects/conf --projpass-none
+- script: ls -al
 #- task: MavenAuthenticate@0
 #  inputs:
 #    artifactsFeeds: axwayapim
