@@ -12,18 +12,18 @@ pool:
 steps:
 - script: pwd
 - script: ls -al
-- script: docker --version
-- task: MavenAuthenticate@0
-  inputs:
-    artifactsFeeds: axwayapim
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+- script: docker run -it  -v /home/vsts/work/1/s:/home/axway/apiprojects  dssaxway.azurecr.io/apim/anm /bin/bash /opt/Axway/apigateway/posix/bin/projpack --create  --passphrase-none --dir /home/axway/apiprojects --name=myarchive --add /home/axway/apiprojects/conf --projpass-none
+#- task: MavenAuthenticate@0
+#  inputs:
+#    artifactsFeeds: axwayapim
+#- task: Maven@3
+#  inputs:
+#    mavenPomFile: 'pom.xml'
+#    mavenOptions: '-Xmx3072m'
+#    javaHomeOption: 'JDKVersion'
+#    jdkVersionOption: '1.8'
+#    jdkArchitectureOption: 'x64'
+#    publishJUnitResults: true
+#    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+#    goals: 'package'
 
